@@ -1,6 +1,6 @@
 import AsyncLine from "../../components/terminal_web/components/async_line/async_line"
 
-const about = [
+const about = (
   <AsyncLine duration={1000}>{`
     ╔═══╡ Me
     ║ 
@@ -42,7 +42,7 @@ const about = [
 
     [i] You may want to use the "skills" command next
 
-  `}</AsyncLine>,
-]
+  `}</AsyncLine>
+)
 
 export default about
