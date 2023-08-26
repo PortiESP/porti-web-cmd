@@ -18,6 +18,7 @@ const help = [
   `,
   <>{"\t- "}<Color hex="ffad42">{"<CTRL+L>"}</Color><Color hex="aaaaaa"> ~ Clear Screen</Color></>,
   <>{"\t- "}<Color hex="ffad42">{"<UP_ARROW|DOWN_ARROW>"}</Color><Color hex="aaaaaa"> ~ Rotate between commands history and shortcuts</Color></>,
+  <>{"\t- "}<Color hex="ffad42">{"<CTRL+C>"}</Color><Color hex="aaaaaa"> ~ Cancel the current prompt line</Color></>,
   "",
   "",
 ]
