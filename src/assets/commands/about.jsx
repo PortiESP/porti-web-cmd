@@ -1,7 +1,20 @@
 import AsyncLine from "../../components/terminal_web/components/async_line/async_line"
 
 const about = (
-  <AsyncLine duration={1000}>{`
+  <AsyncLine duration={1000}>{String.raw`
+
+
+      ______   _______    ______   __    __  ________ 
+     /      \ |       \  /      \ |  \  |  \|        \
+    |  ██████\| ███████\|  ██████\| ██  | ██ \████████
+    | ██__| ██| ██__/ ██| ██  | ██| ██  | ██   | ██   
+    | ██    ██| ██    ██| ██  | ██| ██  | ██   | ██   
+    | ████████| ███████\| ██  | ██| ██  | ██   | ██   
+    | ██  | ██| ██__/ ██| ██__/ ██| ██__/ ██   | ██   
+    | ██  | ██| ██    ██ \██    ██ \██    ██   | ██   
+     \██   \██ \███████   \██████   \██████     \██   
+                                                   
+
     ╔═══╡ Me
     ║ 
     ║  As I have mentioned before, my name is Jaime Portillo, but I am mostly known as Porti.

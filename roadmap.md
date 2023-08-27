@@ -6,3 +6,5 @@
 - More Commands
 - Minijuegos
   - Snake
+- ASCII art on each section
+- Interactive commands
