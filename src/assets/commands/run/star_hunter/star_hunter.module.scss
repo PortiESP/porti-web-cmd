@@ -1,0 +1,45 @@
+.player {
+  position: absolute;
+  width: 100%;
+
+  & .bar {
+    display: block;
+    width: 20vw;
+    height: 30px;
+    background: white;
+  }
+}
+
+.score {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  background: black;
+  padding: 10px 20px;
+  border: 2px solid;
+}
+
+.item {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: yellow;
+  border-radius: 50%;
+}
+
+.info {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+
+  & > div {
+    color: lightgray;
+  }
+  & .info__label {
+    color: gray;
+  }
+  & .info__control {
+    color: orange;
+  }
+}

@@ -8,13 +8,13 @@ import skills from "./commands/skills"
 import social from "./commands/social"
 import projects from "./commands/projects"
 import superheroes from "./commands/superheroes"
+import StarHunter from "./commands/run/star_hunter"
 import Color from "../components/terminal_web/components/color/color"
 
 const initialMessage = [...art, ...introduction]
 const prefix = "Type a command >>> "
 const error = <Color red>Command not recognized, type "help" to print the list of available commands</Color>
 
-// prettier-ignore
 // Commands list should include an "error" command
 const commands = {
   help,
@@ -24,7 +24,7 @@ const commands = {
   skills,
   superheroes,
   error,
-  test: "hola"
+  "run starHunter": StarHunter,
 }
 
 export { commands, prefix, initialMessage }
