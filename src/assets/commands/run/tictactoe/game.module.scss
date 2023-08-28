@@ -1,0 +1,36 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+$tilesize: 40px;
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, $tilesize);
+  justify-content: center;
+}
+
+.tile {
+  height: $tilesize;
+  border: 1px solid #aaa;
+  line-height: $tilesize;
+  text-align: center;
+
+  &.flag__selected {
+    background: #222;
+  }
+}
+
+.tips {
+  color: gray;
+}
+
+.status {
+  margin: 30px;
+  text-align: center;
+}

@@ -9,6 +9,7 @@ import social from "./commands/social"
 import projects from "./commands/projects"
 import superheroes from "./commands/superheroes"
 import StarHunter from "./commands/run/star_hunter"
+import TicTacToe from "./commands/run/tictactoe"
 import Color from "../components/terminal_web/components/color/color"
 
 const initialMessage = [...art, ...introduction]
@@ -24,7 +25,8 @@ const commands = {
   skills,
   superheroes,
   error,
-  "run starHunter": StarHunter,
+  "run StarHunter": StarHunter,
+  "run TicTacToe": TicTacToe,
 }
 
 export { commands, prefix, initialMessage }
