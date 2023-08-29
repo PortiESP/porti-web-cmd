@@ -1,10 +1,8 @@
-# Idead to be implemented
+# Ideas to be implemented
 
-- Responsive desing
+- Responsive design
   - Quick access commands menu
 - Colorize
 - More Commands
-- Minijuegos
+- More Minigames
   - Snake
-- ASCII art on each section
-- Interactive commands
