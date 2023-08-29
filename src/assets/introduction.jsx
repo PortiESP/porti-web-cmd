@@ -30,6 +30,9 @@ const introduction = [
 
       > Type "help" to print the list of available commands
 
+      FOR MOBILE USERS...
+      > You can use the buttons at the bottom-right corner to paste any command, or just tap on the suggestion once it appears on the screen 
+
 
 `,
 ]
