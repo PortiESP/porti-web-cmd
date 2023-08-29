@@ -25,6 +25,7 @@ const help = [
     {"\t>"} social <Color hex="666666">~ Links to my social media</Color>{"\n"}
     {"\t>"} projects <Color hex="666666">~ Some personal projects I've made</Color>{"\n"}
     {"\t>"} superheroes <Color hex="666666">~ Awesome online resources and content creators</Color>
+    {"\t>"} github <Color hex="666666">~ Open the project repo on Github</Color>
   </>,
   `
 
