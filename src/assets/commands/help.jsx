@@ -24,8 +24,8 @@ const help = [
     {"\t>"} skills <Color hex="666666">~ Tree of some of my most relevant skills</Color>{"\n"}
     {"\t>"} social <Color hex="666666">~ Links to my social media</Color>{"\n"}
     {"\t>"} projects <Color hex="666666">~ Some personal projects I've made</Color>{"\n"}
-    {"\t>"} superheroes <Color hex="666666">~ Awesome online resources and content creators</Color>
-    {"\t>"} github <Color hex="666666">~ Open the project repo on Github</Color>
+    {"\t>"} superheroes <Color hex="666666">~ Awesome online resources and content creators</Color>{"\n"}
+    {"\t>"} github <Color hex="666666">~ Open the project repo on Github</Color>{"\n"}
   </>,
   `
 
@@ -33,7 +33,7 @@ const help = [
   `,
   <>
     {"\t>"} run TicTacToe <Color hex="666666">~ Classic TicTacToe board game</Color>{"\n"}
-    {"\t>"} run StarHunter <Color hex="666666">~ Catch the falling items</Color>
+    {"\t>"} run StarHunter <Color hex="666666">~ Catch the falling items</Color>{"\n"}
   </>,
   `
   
