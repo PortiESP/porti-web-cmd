@@ -9,7 +9,6 @@ export default function Test(props) {
   const [score, setScore] = useState(0)
 
   const eventHandler = useCallback((e) => {
-    console.log(e)
     if (e === "arrowright") player.addX(20)
     else if (e === "arrowleft") player.addX(-20)
     else if (e === "ctrl_c") props.exit()
