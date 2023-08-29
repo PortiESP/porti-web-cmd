@@ -27,6 +27,15 @@ const help = [
     {"\t>"} superheroes <Color hex="666666">~ Awesome online resources and content creators</Color>
   </>,
   `
+
+  ╞═════════════════════════╡ Minigames ╞═════════════════════════╡
+  `,
+  <>
+    {"\t>"} run TicTacToe <Color hex="666666">~ Classic TicTacToe board game</Color>{"\n"}
+    {"\t>"} run StarHunter <Color hex="666666">~ Catch the falling items</Color>
+  </>,
+  `
+  
   ╞═════════════════════════╡ Keybinds ╞═════════════════════════╡
   `,
   <>{"\t- "}<Color hex="ffad42">{"<TAB>"}</Color><Color hex="aaaaaa"> ~ Paste suggested command</Color></>,

@@ -95,7 +95,7 @@ export default function TicTacToe(props) {
             <div className={scss.tips}>
               <span style={{textDecoration: "underline"}}>HOW TO PLAY</span><br/><br/>
               <span>Use the arrows to move</span><br/>
-              <span>Press {"<SPACE>"} to mark the selected possition</span><br/>
+              <span>Press {"<SPACE>"} to mark the selected position</span><br/>
               <span>Press 'r' to restart</span><br/>
               <span>Press 'CTRL+C' to exit</span>
             </div>
