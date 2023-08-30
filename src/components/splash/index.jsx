@@ -31,10 +31,22 @@ export default function Splash({ setScene }) {
         <div className={scss.menu__select}>
           <span className={scss.menu__tip}>{TIP[selected]}</span>
           <br />
-          <span className={[scss.item, selected === 0 && scss.selected].join(" ")}>
+          <span
+            className={[scss.item, selected === 0 && scss.selected].join(" ")}
+            onClick={() => {
+              setSelected(0)
+              selected === 0 && keyEvent({ key: "enter" })
+            }}
+          >
             Boot headless OS <span className={scss.item__lang}>(English) default</span>
           </span>
-          <span className={[scss.item, selected === 1 && scss.selected].join(" ")}>
+          <span
+            className={[scss.item, selected === 1 && scss.selected].join(" ")}
+            onClick={() => {
+              setSelected(1)
+              selected === 1 && keyEvent({ key: "enter" })
+            }}
+          >
             Boot headless OS <span className={scss.item__lang}>(Spanish)</span>
           </span>
         </div>
