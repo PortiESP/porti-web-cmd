@@ -7,11 +7,13 @@ The project makes use of some custom *commands* that will help the user discover
 
 ## Bootloader animation
 
-> 🆕 The first time you visit the page, an animation will be displayed simulating the booting-up of a computer. Once you have completed all the booting animation, it will display only every 24h
+> 🆕 The first time you visit the page, an animation will be displayed simulating the boot-up process of a computer. 
+
+> 💡 Once you have completed all the booting animation, it will only be displayed once every 24h. Run the `shutdown` command if you want to preview the animation again
 
 1. The first screen is the **language selection**, use the vertical arrows to navigate over the options and press ENTER to confirm
-2. Then, the screen will print some mock logs and
-3. Finally the CLI is running
+2. Then, the screen will print some mock logs
+3. Finally the CLI will load automatically
 
 ## How to start?
 
