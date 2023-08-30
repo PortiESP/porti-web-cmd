@@ -31,6 +31,7 @@ const commands = {
   skills: <AsyncLine duration={1000}>{LOCALE_skills}</AsyncLine>,
   social: LOCALE_social,
   superheroes: LOCALE_superheroes,
+  language: () => localStorage.setItem("last_seen", 0) || location.reload(),
   github: () => window.open("https://github.com/PortiESP/porti-web-cmd", "_blank").focus(),
   "run StarHunter": StarHunter,
   "run TicTacToe": TicTacToe,
