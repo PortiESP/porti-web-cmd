@@ -26,6 +26,7 @@ const help = [
     {"\t>"} projects <Color hex="666666">~ Some personal projects I've made</Color>{"\n"}
     {"\t>"} superheroes <Color hex="666666">~ Awesome online resources and content creators</Color>{"\n"}
     {"\t>"} github <Color hex="666666">~ Open the project repo on Github</Color>{"\n"}
+    {"\t>"} shutdown <Color hex="666666">~ Run this command to preview the boot screen the next time the site loads</Color>{"\n"}
   </>,
   `
 

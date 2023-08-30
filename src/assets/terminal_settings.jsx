@@ -11,6 +11,7 @@ import superheroes from "./commands/superheroes"
 import StarHunter from "./commands/run/star_hunter"
 import TicTacToe from "./commands/run/tictactoe"
 import Color from "../components/terminal_web/components/color/color"
+import Shutdown from "../components/shutdown"
 
 const initialMessage = [...art, ...introduction]
 const prefix = "[user@0xPorti] ~/Documents$ "
@@ -27,6 +28,7 @@ const commands = {
   superheroes,
   error, // Do not use this one
   github: () => window.open("https://github.com/PortiESP/porti-web-cmd", "_blank").focus(),
+  shutdown: Shutdown,
   "run StarHunter": StarHunter,
   "run TicTacToe": TicTacToe,
 }

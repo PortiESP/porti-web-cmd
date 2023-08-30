@@ -4,6 +4,17 @@
 
 The project makes use of some custom *commands* that will help the user discovering the site
 
+
+## Bootloader animation
+
+> 🆕 The first time you visit the page, an animation will be displayed simulating the booting-up of a computer. Once you have completed all the booting animation, it will display only every 24h
+
+1. The first screen is the **language selection**, use the vertical arrows to navigate over the options and press ENTER to confirm
+2. Then, the screen will print some mock logs and
+3. Finally the CLI is running
+
+## How to start?
+
 > Read the initial message and then use the `help` command to get started
 
 ### Commands
@@ -14,6 +25,8 @@ The project makes use of some custom *commands* that will help the user discover
 - `projects` ~ Recent projects
 - `skills` ~ Tree of the skills I've developed over the years
 - `superheroes` ~ References to the online resources that I found useful
+- `github` ~ Opens the github page of the project
+- `shutdown` ~ Simulates a shutdown of a computer, the next refresh will load the booting animation again
 
 ### Minigames
 

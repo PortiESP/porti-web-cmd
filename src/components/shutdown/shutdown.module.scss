@@ -1,0 +1,23 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main {
+  animation: blink infinite 1.5s step-start;
+  color: white;
+}
+
+.tip {
+  color: #fff3;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

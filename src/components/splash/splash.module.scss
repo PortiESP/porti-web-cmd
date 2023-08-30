@@ -1,0 +1,62 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: monospace;
+
+  color: #eee;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(17, 0, 255);
+  padding: 6px;
+  width: clamp(300px, 45vw, 800px);
+
+  & > div {
+    border: 4px solid #111;
+    width: 100%;
+    padding: 10px;
+  }
+
+  & .menu__title {
+    border-bottom: 0;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 900;
+  }
+
+  & .menu__select {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-weight: 400;
+
+    & .item {
+      padding: 2px;
+      color: #fff6;
+
+      & .item__lang {
+        color: #fffb;
+      }
+    }
+  }
+
+  & .menu__tip {
+    color: #fff8;
+    text-align: center;
+
+    & b {
+      color: #ffffff;
+    }
+  }
+}
+
+.menu .menu__select .selected,
+.menu .menu__select .selected .item__lang {
+  background: #eee;
+  color: black;
+}

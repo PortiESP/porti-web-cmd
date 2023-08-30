@@ -1,6 +1,13 @@
+@import "./components/terminal_web/themes/theme1";
+
 .wrapper {
   width: 100vw;
   height: 100vh;
+  background: $terminalBackground;
 
-  background: red;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
