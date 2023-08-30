@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react"
+import { useCallback, useEffect, useRef, useState } from "react"
 import scss from "./splash.module.scss"
 
 const NUMBER_OF_OPTIONS = 2
@@ -10,6 +10,7 @@ const TIP = [
 
 export default function Splash({ setScene }) {
   const [selected, setSelected] = useState(0)
+  const $container = useRef(null)
 
   const keyEvent = useCallback(
     (e) => {
@@ -24,8 +25,12 @@ export default function Splash({ setScene }) {
     [selected]
   )
 
+  useEffect(() => {
+    $container.current.focus()
+  }, [])
+
   return (
-    <div className={scss.wrap} tabIndex={0} onKeyDown={keyEvent} onMouseMove={(e) => e.target.focus()}>
+    <div className={scss.wrap} tabIndex={0} onKeyDown={keyEvent} ref={$container}>
       <div className={scss.menu}>
         <div className={scss.menu__title}>0xPorti</div>
         <div className={scss.menu__select}>
