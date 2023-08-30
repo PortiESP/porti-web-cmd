@@ -1,5 +1,9 @@
+import getLang from "../../utils/get_lang"
+
+const LANG = getLang(undefined)
+
 // prettier-ignore
-const social = [
+export const LOCALE_social = [
   String.raw`
     ______    ______    ______   ______   ______   __       
    /      \  /      \  /      \ |      \ /      \ |  \      
@@ -21,5 +25,3 @@ const social = [
   "",
   "",
 ]
-
-export default social

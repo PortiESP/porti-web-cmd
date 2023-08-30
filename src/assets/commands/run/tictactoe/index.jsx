@@ -23,8 +23,6 @@ export default function TicTacToe(props) {
   const [isPlayerTurn, setIsPlayerTurn] = useState(true)
   const boardFull = useCallback(() => !board.filter((t) => t !== PLAYER_MARKER && t !== ENEMY_MARKER).length, [board])
 
-  console.log("debug", selected, boardFull(), gameState, board)
-
   const handleEvents = useCallback(
     (e) => {
       // Functions

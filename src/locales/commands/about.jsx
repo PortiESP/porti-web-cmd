@@ -1,4 +1,4 @@
-import useDetectLang from "../hooks/use_detect_lang"
+import getLang from "../../utils/get_lang"
 
 const LOCALES = {
   en: {
@@ -29,9 +29,9 @@ const LOCALES = {
       {
         TITLE: "Dive deep",
         BODY: [
-          "Since then, I expanded my scope to multiple other topics, one of those was Cybersecurity. With the help of controlled environments provided",
+          "Since then, I expanded my scope to multiple other topics, one of those was Cybersecurity with the help of controlled environments provided",
           "by platforms like TryHackMe or HackTheBox but also some other challenges. Along this time I also started to get quite into Operative Systems,",
-          "since it is almost a requirement needed to really get into cybersecurity. The following months I started learning th basics of Linux and BASH,",
+          "since it is almost a requirement needed to really get into cybersecurity. The following months I started learning the basics of Linux, BASH,",
           "along with some basics about Low-level programming and networking, then headed into the basics of some advanced topics such as ",
           "Forensics, Cryptography, OSINT, Pentesting, ...",
         ],
@@ -66,33 +66,33 @@ const LOCALES = {
       {
         TITLE: "El principio",
         BODY: [
-          "The quarantine was such an opportunity for me to focus 100% in the new skills I was about to learn with all the whole world that",
-          "programming has, for the next 6 months I was completely focused in learning everything related to programming with Python, until",
-          "at some point I found myself deeply involved in many other fields I was looking forward to explore.",
+          "La cuarentena fue una gran oportunidad para mí de concentrarme al 100% en las nuevas habilidades que estaba a punto de aprender con todo el mundo",
+          "de la programación, durante los siguientes 6 meses estuve completamente enfocado en aprender todo lo relacionado con la programación con Python, hasta",
+          "que de un momento a otro me encontré inmerso en muchos otros campos que estaba deseando explorar.",
         ],
       },
       {
-        TITLE: "Dive deep",
+        TITLE: "Adentrándome más",
         BODY: [
-          "Since then, I expanded my scope to multiple other topics, one of those was Cybersecurity. With the help of controlled environments provided",
-          "by platforms like TryHackMe or HackTheBox but also some other challenges. Along this time I also started to get quite into Operative Systems,",
-          "since it is almost a requirement needed to really get into cybersecurity. The following months I started learning th basics of Linux and BASH,",
-          "along with some basics about Low-level programming and networking, then headed into the basics of some advanced topics such as ",
-          "Forensics, Cryptography, OSINT, Pentesting, ...",
+          "Desde entonces, he ampliado mi alcance a otros múltiples temas, uno de ellos fue la ciberseguridad con la ayuda de entornos controlados proporcionados",
+          "por plataformas como TryHackMe o HackTheBox, pero también algunos otros desafíos. A lo largo de este tiempo, también comencé a adentrarme bastante en los sistemas operativos,",
+          "ya que es casi un requisito indispensable para realmente entrar en la ciberseguridad. En los meses siguientes también comencé a aprender los conceptos básicos de Linux, BASH,",
+          "junto con algunos conceptos básicos sobre programación de bajo nivel y redes, luego me adentré en los conceptos básicos de algunos temas avanzados como",
+          "Forense, Criptografía, OSINT, Pentesting, ...",
         ],
       },
       {
         TITLE: "Superheroes",
         BODY: [
-          "All of this stuff I have learned wouldn't be possible without all of the amazing videos and posts public in the internet. It is amazing all the things you can",
-          "learn from a video on YouTube of some random guy that just decided to create videos for free so anyone can learn complex topics the easiest.",
+          "Todo esto que he aprendido no sería posible sin todos los videos y publicaciones increíbles disponibles en Internet. Es sorprendente todo lo que puedes aprender de un video en YouTube",
+          "de un canal al azar que simplemente decidió crear videos de forma gratuita para que cualquiera pueda aprender los temas más complejos de la manera más sencilla.",
         ],
       },
     ],
-    TIP: '[i] You may want to use the "skills" command next',
+    TIP: '[i] Puedes probar el comando "skills" para continuar',
   },
 }
-const LANG = LOCALES[useDetectLang()]
+const LANG = getLang(LOCALES)
 
 export const LOCALE_about = String.raw`
 
@@ -106,6 +106,7 @@ export const LOCALE_about = String.raw`
     | ██  | ██| ██    ██ \██    ██ \██    ██   | ██   
      \██   \██ \███████   \██████   \██████     \██   
                                                    
+
 
     ╔═══╡ ${LANG.SECTIONS[0].TITLE}
     ║ 

@@ -1,7 +1,39 @@
-import AsyncLine from "../../components/terminal_web/components/async_line/async_line"
+import getLang from "../../utils/get_lang"
 
-const skills = [
-  <AsyncLine duration={1000}>{String.raw`
+const LANG = getLang({
+  en: {
+    TITLE: "Skills Tree",
+    CATEGORIES: {
+      PROGRAMMING: "Programming",
+      DB: "DBs",
+      CYBERSECURITY: "Cybersecurity",
+      OS_MANAGEMENT: "Operative Systems Management",
+      APPS_TOOLS: "Apps & Tools",
+      DESIGN_3D: "3D Design",
+    },
+    KEYWORDS: {
+      CONCEPTS: "Concepts",
+      OS_S: "OSs",
+    },
+  },
+  es: {
+    TITLE: "Árbol de habilidades",
+    CATEGORIES: {
+      PROGRAMMING: "Programación",
+      DB: "BBDD",
+      CYBERSECURITY: "Ciberseguridad",
+      OS_MANAGEMENT: "Gestión de Sistemas Operativos",
+      APPS_TOOLS: "Herramientas y Aplicaciones",
+      DESIGN_3D: "Diseño 3D",
+    },
+    KEYWORDS: {
+      CONCEPTS: "Conceptos",
+      OS_S: "Sistemas Operativos",
+    },
+  },
+})
+
+export const LOCALE_skills = String.raw`
 
 
    ______   __    __  ______  __        __        ______  
@@ -16,11 +48,11 @@ const skills = [
                                                           
 
    
-  ┌─────────────┐
-  │ Skills Tree │
-  └─┬───────────┘
+  ┌──${"─".repeat(LANG.TITLE.length)}┐
+  │ ${LANG.TITLE} │
+  └─┬${"─".repeat(LANG.TITLE.length)}┘
     │
-    ├── Programming
+    ├── ${LANG.CATEGORIES.PROGRAMMING}
     │   ├── Python
     │   ├── C
     │   ├── HTML
@@ -39,14 +71,14 @@ const skills = [
     │   ├── Markdown
     │   ├── R
     │   └── Assembly (MIPS)
-    ├── DBs
+    ├── ${LANG.CATEGORIES.DB}
     │   ├── Firebase
     │   ├── Redis
     │   └── MySQL
-    ├── Cibersecurity
-    │   ├── Topics
+    ├── ${LANG.CATEGORIES.CYBERSECURITY}
+    │   ├── ${LANG.KEYWORDS.CONCEPTS}
     │   │   ├── Digital Forensics
-    │   │   ├── Criptography
+    │   │   ├── Cryptography
     │   │   ├── Pentesting
     │   │   ├── Binary Exploitation
     │   │   └── OSINT
@@ -69,8 +101,8 @@ const skills = [
     │       ├── Autopsy
     │       ├── Maltego
     │       └── BurpSuite
-    ├── Operative Systems Management
-    │   ├── OSs
+    ├── ${LANG.CATEGORIES.OS_MANAGEMENT}
+    │   ├── ${LANG.KEYWORDS.OS_S}
     │   │   ├── Linux
     │   │   │   ├── Ubuntu
     │   │   │   ├── Arch
@@ -79,12 +111,12 @@ const skills = [
     │   │       ├── Batch & Powershell
     │   │       ├── Registers
     │   │       └── SysInternals
-    │   └── Concepts
+    │   └── ${LANG.KEYWORDS.CONCEPTS}
     │       ├── Scheduled tasks
     │       ├── Partitions Management
     │       ├── Shell
     │       └── Forensics
-    ├── Apps & Tools
+    ├── ${LANG.CATEGORIES.APPS_TOOLS}
     │   ├── Figma
     │   ├── Git
     │   ├── Docker
@@ -92,13 +124,10 @@ const skills = [
     │   ├── Notion
     │   ├── Chrome Dev Tools
     │   └── Google Analytics
-    ├── 3D Design
+    ├── ${LANG.CATEGORIES.DESIGN_3D}
     │   └── Blender
     └── Hardware
         ├── Arduino
         ├── Raspberry PI
         └── Flipper Zero
-  `}</AsyncLine>,
-]
-
-export default skills
+  `

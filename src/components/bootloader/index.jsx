@@ -1,27 +1,40 @@
-import { useEffect, useRef, useState } from "react"
+import { useCallback, useEffect, useRef, useState } from "react"
 import scss from "./bootloader.module.scss"
 
 const DELAY = 20
+const LAST_WAIT_DELAY = 1500
 
-export default function Bootloader({ setScene }) {
+export default function Bootloader({ setScene, isLoaded }) {
   const [renderedData, setRenderedData] = useState([])
+  const [ready, setReady] = useState(false)
   const $focus = useRef(null)
 
+  // Animate logs
   useEffect(() => {
+    // Write line by line
     const timers = messages.map((m, i) =>
       setTimeout(() => {
         setRenderedData((old) => [...old, m])
         $focus.current.scrollIntoView()
       }, DELAY * i)
     )
-    setTimeout(() => {
-      setScene(2)
-      console.log("Setting storage", Date.now())
-      localStorage.setItem("last_seen", Date.now())
-    }, timers.length * DELAY + 1500)
 
+    // Wait a few seconds after the animation
+    setTimeout(() => {
+      setReady(true)
+    }, timers.length * DELAY + LAST_WAIT_DELAY)
+
+    // Clean-up timers
     return () => timers.map((id) => clearInterval(id))
   }, [])
+
+  // Ensure that all the data is retrieved before changing the scene
+  useEffect(() => {
+    if (ready && isLoaded) {
+      localStorage.setItem("last_seen", Date.now())
+      setScene(2)
+    }
+  }, [ready, isLoaded])
 
   return (
     // prettier-ignore

@@ -1,3 +1,5 @@
+import getLang from "../../utils/get_lang"
+
 const youtube = [
   {
     title: "Live Overflow",
@@ -103,7 +105,7 @@ const youtube = [
 
 const docs = [
   {
-    title: "Linux documention",
+    title: "Linux documentation",
     url: "https://linux.die.net/man/",
   },
   {
@@ -111,7 +113,7 @@ const docs = [
     url: "https://www.tutorialspoint.com/",
   },
   {
-    title: "Developer mozilla",
+    title: "Developer Mozilla",
     url: "https://developer.mozilla.org/",
   },
   {
@@ -120,17 +122,17 @@ const docs = [
   },
 ]
 
-const desing = [
+const design = [
   {
     title: "Dev icons",
     description:
-      "This page has the logos of the programming laguages, IDEs, desing tools and basicaly almost every thing we use as developers daily, icons also have diferent versions available, no reference needed",
+      "This page has the logos of the programming languages, IDEs, design tools and basically almost every thing we use as developers daily, icons also have different versions available, no reference needed",
     url: "https://devicon.dev/",
     featured: true,
   },
   {
     title: "Flaticons",
-    description: "This site have many icons of many diferent styles with high quality, attribution is required",
+    description: "This site have many icons of many different styles with high quality, attribution is required",
     url: "https://www.flaticon.com/authors/flat_circular/flat/",
   },
   {
@@ -151,17 +153,17 @@ const desing = [
   },
   {
     title: "Fluent emoji",
-    description: "This is a figma project that has created all the emojis in 4 versions (3D, Color, Flat, B&W)",
+    description: "This is a Figma project that has created all the emojis in 4 versions (3D, Color, Flat, B&W)",
     url: "https://www.figma.com/file/X7tvUV8DyUUxuQ2S3WJtNt/Fluent-emoji-%E2%80%94-1-(Community)",
   },
   {
     title: "Get emoji",
     description:
-      "This is a page where we can copy web emojis to the clipboard, this page actualy refers to emojipedia.com",
+      "This is a page where we can copy web emojis to the clipboard, this page actually refers to emojipedia.com",
     url: "https://getemoji.com/",
   },
   {
-    title: "Adove color",
+    title: "Adobe color",
     description: "This page will generate color palettes based on your preferences",
     url: "https://color.adobe.com/create/color-wheel",
   },
@@ -206,13 +208,28 @@ const illustrations = [
 const sections = [
   { name: "YouTube", data: youtube },
   { name: "Docs", data: docs },
-  { name: "Color & Desing", data: desing },
+  { name: "Color & Design", data: design },
   { name: "Illustrations", data: illustrations },
 ]
 
+const LANG = getLang({
+  en: {
+    TITLE: [
+      "In this section I would like to give a huge shout-out to all the content creators and online resources that",
+      "helped me a lot during all of this time <3",
+    ],
+  },
+  es: {
+    TITLE: [
+      "He creado esta sección para dar crédito a los recursos y creadores de contenido que me han sido muy útiles",
+      "y me han ayudado a seguir creciendo y aprendiendo cada día <3",
+    ],
+  },
+})
+
 // prettier-ignore
-const superheroes = [
-  `
+export const LOCALE_superheroes = [
+  String.raw`
 
     ______   __    __  _______   ________  _______   __    __  ________  _______    ______   ________   ______  
    /      \ |  \  |  \|       \ |        \|       \ |  \  |  \|        \|       \  /      \ |        \ /      \ 
@@ -224,8 +241,8 @@ const superheroes = [
    \██    ██ \██    ██| ██      | ██     \| ██  | ██| ██  | ██| ██     \| ██  | ██ \██    ██| ██     \ \██    ██
     \██████   \██████  \██       \████████ \██   \██ \██   \██ \████████ \██   \██  \██████  \████████  \██████ 
 
-  In this section I would like to give a huge shoutout to all the content creators and online resources that
-  helped me a lot during all of this time <3
+  ${LANG.TITLE[0]}
+  ${LANG.TITLE[1]}
   `,
   ...sections.map(section => ([
     `
@@ -238,5 +255,3 @@ const superheroes = [
   ])),
   ""
 ]
-
-export default superheroes
