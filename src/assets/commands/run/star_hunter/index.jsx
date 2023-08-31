@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react"
 import useKBDListener from "../../../../components/terminal_web/hooks/use_kbd_events"
 import scss from "./star_hunter.module.scss"
 
-export default function Test(props) {
+export default function StarHunter(props) {
   const { ListenerProvider } = useKBDListener()
   const { Player, ...player } = usePlayer()
   const { Item, ...item } = useItem()

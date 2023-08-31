@@ -1,5 +1,6 @@
 import AsyncLine from "../components/terminal_web/components/async_line/async_line"
 import Color from "../components/terminal_web/components/color/color"
+import { lazy } from "react"
 
 // Content
 import art from "./0xporti_pixel_art"
@@ -12,9 +13,10 @@ import { LOCALE_skills } from "../locales/commands/skills"
 import { LOCALE_projects } from "../locales/commands/projects"
 import { LOCALE_social } from "../locales/commands/social"
 import { LOCALE_superheroes } from "../locales/commands/superheroes"
-import Shutdown from "../components/shutdown"
-import StarHunter from "./commands/run/star_hunter"
-import TicTacToe from "./commands/run/tictactoe"
+const Shutdown = lazy(() => import("../components/shutdown"))
+const StarHunter = lazy(() => import("./commands/run/star_hunter"))
+const TicTacToe = lazy(() => import("./commands/run/tictactoe"))
+const Chat = lazy(() => import("./commands/run/chat"))
 
 const initialMessage = [...art, ...LOCALE_introduction]
 const prefix = "[user@0xPorti] ~/Documents$ "
@@ -35,6 +37,7 @@ const commands = {
   github: () => window.open("https://github.com/PortiESP/porti-web-cmd", "_blank").focus(),
   "run StarHunter": StarHunter,
   "run TicTacToe": TicTacToe,
+  "run Chat": Chat,
 }
 
 export { commands, prefix, initialMessage }
