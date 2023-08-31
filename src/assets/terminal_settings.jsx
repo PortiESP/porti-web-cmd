@@ -16,7 +16,6 @@ import { LOCALE_superheroes } from "../locales/commands/superheroes"
 const Shutdown = lazy(() => import("../components/shutdown"))
 const StarHunter = lazy(() => import("./commands/run/star_hunter"))
 const TicTacToe = lazy(() => import("./commands/run/tictactoe"))
-// const Chat = lazy(() => import("./commands/run/chat"))
 
 const initialMessage = [...art, ...LOCALE_introduction]
 const prefix = "[user@0xPorti] ~/Documents$ "
@@ -37,7 +36,6 @@ const commands = {
   github: () => window.open("https://github.com/PortiESP/porti-web-cmd", "_blank").focus(),
   "run StarHunter": StarHunter,
   "run TicTacToe": TicTacToe,
-  // "run Chat": Chat,
 }
 
 export { commands, prefix, initialMessage }
