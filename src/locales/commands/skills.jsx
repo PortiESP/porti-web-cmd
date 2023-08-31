@@ -90,7 +90,8 @@ export const LOCALE_skills = String.raw`
     │       ├── Shodan
     │       ├── Hexeditor
     │       ├── SSH
-    │       ├── John & Hashcat
+    │       ├── John
+    │       ├── Hashcat
     │       ├── Aircrack-ng
     │       ├── Bettercap
     │       ├── Chisel
