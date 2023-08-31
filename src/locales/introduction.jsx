@@ -13,7 +13,7 @@ const LANG = getLang({
     WHAT_IS_THIS: [
       "This project is a terminal-based portfolio, the user will use some predefined commands to help him getting to know me.",
       "The terminal also implements some features such as: Keybinds, command autocompletion or commands history",
-      "Take a look to the project code at the ",
+      "Take a look to the project code at the",
       "and give the project a start if you like it",
     ],
     LETS_START_TITLE: "LETS START!",
@@ -35,8 +35,8 @@ const LANG = getLang({
     WHAT_IS_THIS: [
       "Este proyecto es un portafolio basado en terminal. El usuario utilizará algunos comandos predefinidos para conocerme mejor.",
       "La terminal también implementa algunas funciones como atajos de teclado, autocompletado de comandos o historial de comandos.",
-      "Echa un vistazo al código del proyecto en el ",
-      "y dale una estrella si te gusta el proyecto",
+      "Echa un vistazo al código del proyecto en el",
+      "y si te gusta, dale una estrella",
     ],
     LETS_START_TITLE: "EMPECEMOS!",
     LETS_START: [
@@ -68,7 +68,7 @@ export const LOCALE_introduction = [
       
       - ${LANG.WHAT_IS_THIS[0]}
       - ${LANG.WHAT_IS_THIS[1]}`,
-  <>{"      - "}{LANG.WHAT_IS_THIS[2]}<a href="https://github.com/PortiESP/porti-web-cmd">Github repo</a> {LANG.WHAT_IS_THIS[3]} ;)</>,
+  <>{"      - "}{LANG.WHAT_IS_THIS[2]} <a href="https://github.com/PortiESP/porti-web-cmd">Github repo</a> {LANG.WHAT_IS_THIS[3]} ;)</>,
   `
 
   ┌──${'─'.repeat(LANG.LETS_START_TITLE.length)}┐

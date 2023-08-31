@@ -29,6 +29,7 @@ The project makes use of some custom *commands* that will help the user discover
 - `superheroes` ~ References to the online resources that I found useful
 - `github` ~ Opens the github page of the project
 - `shutdown` ~ Simulates a shutdown of a computer, the next refresh will load the booting animation again
+- `language` ~ Allows the user to go back to the boot screen to change the language
 
 ### Minigames
 
