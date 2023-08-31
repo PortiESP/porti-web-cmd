@@ -18,7 +18,7 @@ export default function Shutdown(props) {
     localStorage.setItem("last_seen", 0)
   }, [])
   return (
-    <div className={scss.wrap}>
+    <div className={scss.wrap} data-test="no-signal">
       <span className={scss.main}>{LANG.NO_SIGNAL}</span>
       <span className={scss.tip}>({LANG.TIP})</span>
     </div>

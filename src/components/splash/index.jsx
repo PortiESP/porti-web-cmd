@@ -30,7 +30,7 @@ export default function Splash({ setScene }) {
   }, [])
 
   return (
-    <div className={scss.wrap} tabIndex={0} onKeyDown={keyEvent} ref={$container}>
+    <div className={scss.wrap} tabIndex={0} onKeyDown={keyEvent} ref={$container} data-test="splash">
       <div className={scss.menu}>
         <div className={scss.menu__title}>0xPorti</div>
         <div className={scss.menu__select}>
@@ -42,6 +42,7 @@ export default function Splash({ setScene }) {
               setSelected(0)
               selected === 0 && keyEvent({ key: "enter" })
             }}
+            data-test="english"
           >
             Boot headless OS <span className={scss.item__lang}>(English) default</span>
           </span>
@@ -51,6 +52,7 @@ export default function Splash({ setScene }) {
               setSelected(1)
               selected === 1 && keyEvent({ key: "enter" })
             }}
+            data-test="spanish"
           >
             Boot headless OS <span className={scss.item__lang}>(Spanish)</span>
           </span>

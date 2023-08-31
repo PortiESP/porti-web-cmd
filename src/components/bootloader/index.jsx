@@ -38,7 +38,7 @@ export default function Bootloader({ setScene, isLoaded }) {
 
   return (
     // prettier-ignore
-    <div className={scss.wrap}>
+    <div className={scss.wrap} data-test="bootloader">
       {renderedData.map((msg,i) => <span key={i}>{msg}</span>)}
       <span ref={$focus}/>
     </div>
@@ -46,7 +46,7 @@ export default function Bootloader({ setScene, isLoaded }) {
 }
 
 const messages = [
-  <pre>[BOOTLOADER] Loading, please wait...</pre>,
+  <pre data-test="first-log">[BOOTLOADER] Loading, please wait...</pre>,
   <pre>Boot 0xPorti x86 version 17.5.2</pre>,
   <pre>[DEVICES] Initializing device files</pre>,
   <pre>
@@ -293,7 +293,7 @@ const messages = [
   <pre>
     <span style={{ color: "green" }}>Starting</span> sshd{" "}
   </pre>,
-  <pre>
+  <pre data-test="last-log">
     <span style={{ color: "green" }}>Starting</span> local ...{" "}
   </pre>,
 ]
