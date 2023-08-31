@@ -1,0 +1,3 @@
+[submodule "src/components/terminal_web"]
+	path = src/components/terminal_web
+	url = https://github.com/PortiESP/terminal_web.git
