@@ -30,9 +30,9 @@ export default function App() {
         // prettier-ignore
         scene === 0 && <Splash setScene={setScene} /> ||
         scene === 1 && <Bootloader setScene={setScene} isLoaded={!!terminalSettings}/> ||
-        scene === 2 && <Suspense>
-                          <TerminalWeb {...terminalSettings}/>
-                        </Suspense>
+        scene === 2 && !!terminalSettings && <Suspense>
+                                                <TerminalWeb {...terminalSettings}/>
+                                            </Suspense>
       }
     </div>
   )
