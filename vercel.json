@@ -1,6 +1,5 @@
 {
-  "routes": [
-    { "src": "/", "dest": "/" },
-    { "src": "/mips-decompiler", "dest": "/mips-decompiler" }
+  "rewrites":  [
+    {"source": "/(.*)", "destination": "/"}
   ]
 }
