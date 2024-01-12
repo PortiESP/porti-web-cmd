@@ -7,6 +7,7 @@ const LANG = getLang({
       MARKUP_WIDGETS: "React UI Components",
       NOTION_2_OBSIDIAN: "Graphical tool for converting",
       REACT_TERMINAL_API: "API to use a terminal using React fetch requests",
+      MIPS_DECOMPILER: "An online tool to decompile MIPS instructions",
     },
   },
   es: {
@@ -15,6 +16,7 @@ const LANG = getLang({
       MARKUP_WIDGETS: "Librería de componentes UI para React",
       NOTION_2_OBSIDIAN: "Herramienta con interfaz gráfica de conversión de Notion a Obsidian",
       REACT_TERMINAL_API: "API para usar una terminal en React basada en llamadas 'fetch'",
+      MIPS_DECOMPILER: "Una herramienta online para desensamblar instrucciones MIPS online",
     },
   },
 })
@@ -40,6 +42,7 @@ export const LOCALE_projects = [
   <>{"\t"}<a href="https://github.com/PortiESP/MarkupWidgets">MarkupWidgets</a> -------- {LANG.PROJECTS.MARKUP_WIDGETS}</>,
   <>{"\t"}<a href="https://github.com/PortiESP/Notion2Obsidian">Notion2Obsidian</a> ------ {LANG.PROJECTS.NOTION_2_OBSIDIAN}</>,
   <>{"\t"}<a href="https://github.com/PortiESP/react-terminal-api">React Terminal API</a> --- {LANG.PROJECTS.REACT_TERMINAL_API}</>,
+  <>{"\t"}<a href="https://github.com/PortiESP/mips-disassembler-online">MIPS Online Decompiler</a> --- {LANG.PROJECTS.MIPS_DECOMPILER}</>,
   "\n",
   "\n",
 ]
