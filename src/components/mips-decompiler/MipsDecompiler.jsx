@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import setup from "./scripts/setup.js"
-import "./styles/index.css"
+import scss from "./styles/index.module.scss"
 
 export default function MipsDecompiler() {
 
