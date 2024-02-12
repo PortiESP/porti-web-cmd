@@ -19,7 +19,7 @@ export default function MipsDecompiler() {
               <input type="text" id="instruction-address" name="instruction-address" placeholder="0x1A2B3C4D" autoFocus /> <span className={scss.required}>*(required)</span>
             </div>
             <div className={scss.input_group}>
-              <label htmlFor="instruction-code">Instruction code (big-endian): </label>
+              <label htmlFor="instruction-code">Instruction code ((0)M-(1)M-(2)M-(3)M): </label>
               <input type="text" id="instruction-code" name="instruction-code" placeholder="XX-XX-XX-XX" /> <span className={scss.required}>*(required)</span>
             </div>
           </div>
